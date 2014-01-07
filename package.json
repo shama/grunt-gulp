@@ -1,0 +1,51 @@
+{
+  "name": "grunt-gulp",
+  "description": "Run gulp tasks through grunt",
+  "version": "0.1.0",
+  "homepage": "https://github.com/shama/grunt-gulp",
+  "author": {
+    "name": "Kyle Robinson Young",
+    "email": "kyle@dontkry.com",
+    "url": "http://dontkry.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/grunt-gulp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shama/grunt-gulp/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shama/grunt-gulp/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "files": [
+    "tasks",
+    "LICENSE-MIT"
+  ],
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "gulp": "~3.2.4",
+    "gulp-concat": "~2.1.7"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-nodeunit": "~0.2.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "gulp-coffee": "~1.2.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
