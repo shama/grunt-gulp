@@ -22,10 +22,11 @@ module.exports = function(grunt) {
     } else {
       gulp.task('default', function() {
         var count = grunttask.files.length;
+        var errcount = 0;
         function isdone() {
           count--;
           if (count < 1) {
-            done(grunt.fail.errorcount === 0);
+            done(errcount === 0);
           }
         }
         grunttask.files.forEach(function(file) {
@@ -44,6 +45,7 @@ module.exports = function(grunt) {
           });
           dest.on('error', function(err) {
             grunt.log.error(err);
+            errcount++;
             isdone();
           });
           return s.pipe(concat(filename)).pipe(dest);
