@@ -32,8 +32,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "gulp": "~3.2.4",
-    "gulp-concat": "~2.1.7"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
