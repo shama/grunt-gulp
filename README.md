@@ -114,5 +114,6 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 1.0.1 - Fix gulp.run deprecation.
 * 1.0.0 - Update gulp dependencies and tag peerDependencies as `grunt>=0.4.0`
 * 0.1.0 - initial release
