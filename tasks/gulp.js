@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 
     if (typeof this.data === 'function') {
       gulp.task('default', this.data);
-      gulp.run('default', done);
+      gulp.start('default', done);
     } else {
       gulp.task('default', function() {
         var count = grunttask.files.length;
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
           return s.pipe(concat(filename)).pipe(dest);
         });
       });
-      gulp.run();
+      gulp.start();
     }
   });
 
