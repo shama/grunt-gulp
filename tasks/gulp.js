@@ -19,9 +19,9 @@ module.exports = function(grunt) {
     if (typeof this.data === 'function') {
       gulp.task('default', this.data);
       gulp.start('default', function(err) {
-        if(err) done(false);  // `false` to error out the grunt task
+        if (err) done(false);  // `false` to error out the grunt task
         else done();
-      } );
+      });
     } else {
       gulp.task('default', function() {
         var count = grunttask.files.length;
